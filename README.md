@@ -57,7 +57,6 @@ request = {
 
 target = "/OUTPUT_DIR/era5_msl_2017_6hourly.nc"
 os.makedirs(os.path.dirname(target), exist_ok=True)
-# client = cdsapi.Client()
 
 c.retrieve(dataset, request, target)
 
